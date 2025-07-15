@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic Tac Toe with AI</title>
+  
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+  
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>Tic Tac Toe (Unbeatable AI)</h1>
+
+    <label for="difficulty">Difficulty:</label>
+    <select id="difficulty">
+      <option value="easy">Easy</option>
+      <option value="hard" selected>Hard</option>
+    </select>
+
+    <div id="board"></div>
+    
+    <p id="status"></p>
+
+    <!-- Score Tracker -->
+    <div id="score">
+      <p>👤 You: <span id="humanScore">0</span></p>
+      <p>🤖 AI: <span id="aiScore">0</span></p>
+      <p>🤝 Draws: <span id="drawScore">0</span></p>
+    </div>
+
+    <!-- Buttons -->
+    <button onclick="restartGame()">🔄 Restart Game</button>
+    <button onclick="toggleDarkMode()" id="darkModeBtn">🌙 Dark Mode</button>
+    <button onclick="toggleSound()" id="muteBtn">🔊 Sound On</button>
+  </div>
+
+  <!-- Main Game Logic -->
+  <script src="script.js"></script>
+</body>
+</html>

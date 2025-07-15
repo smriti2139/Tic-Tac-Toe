@@ -1,0 +1,162 @@
+/* General page styles */
+body {
+  font-family: 'Quicksand', sans-serif;
+  background: linear-gradient(to right, #ffecd2, #fcb69f);
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  width: 350px;
+}
+
+/* Header */
+h1 {
+  margin-top: 0;
+  color: #333333;
+  font-size: 24px;
+}
+
+/* Difficulty dropdown */
+label,
+select {
+  font-size: 16px;
+  margin: 10px;
+  padding: 5px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* Game board */
+#board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  gap: 8px;
+  margin: 20px auto;
+  justify-content: center;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  background-color: #ffffff;
+  border: 2px solid #555;
+  font-size: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease, transform 0.2s;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.cell:hover:not(.disabled) {
+  background-color: #f0f0f0;
+  transform: scale(1.05);
+}
+
+.cell.disabled {
+  pointer-events: none;
+  color: #aaa;
+}
+
+/* Win highlight */
+.cell.win {
+  background-color: #86efac;
+  color: #000;
+  font-weight: bold;
+  animation: pulseWin 0.4s ease-in-out;
+}
+
+/* Status message */
+#status {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 15px 0;
+  color: #333;
+}
+
+/* Buttons */
+button {
+  padding: 10px 20px;
+  background-color: #6366f1;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  margin: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #4f46e5;
+}
+
+/* Score tracker */
+#score {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: #444;
+}
+
+#score p {
+  margin: 4px;
+  font-size: 15px;
+}
+
+/* Animations */
+@keyframes pulseWin {
+  0% {
+    background-color: #ffffff;
+  }
+  100% {
+    background-color: #86efac;
+  }
+}
+
+/* Dark Mode */
+body.dark {
+  background: #1e1e1e;
+  color: white;
+}
+
+body.dark .container {
+  background: #2c2c2c;
+}
+
+body.dark .cell {
+  background-color: #3a3a3a;
+  border-color: #777;
+  color: white;
+}
+
+body.dark .cell.win {
+  background-color: #10b981;
+  color: black;
+}
+
+body.dark button {
+  background-color: #0ea5e9;
+}
+
+body.dark button:hover {
+  background-color: #0284c7;
+}
+
+body.dark #score {
+  color: #eee;
+}
+body.dark h1 {
+  color: #ffffff;
+}
