@@ -24,7 +24,7 @@ CSS3 – Stylish design with light/dark themes and animations
 JavaScript – Game logic, AI (Minimax), DOM manipulation, and interactivity
 
 📷 Screenshots
-screenshot.png
+![Tic Tac Toe Screenshot](https://raw.githubusercontent.com/smriti2139/Tic-Tac-Toe/main/Screenshot.png)
 
 📂 How to Run Locally
 Clone this repository:
