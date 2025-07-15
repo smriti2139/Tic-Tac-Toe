@@ -24,7 +24,7 @@ CSS3 – Stylish design with light/dark themes and animations
 JavaScript – Game logic, AI (Minimax), DOM manipulation, and interactivity
 
 📷 Screenshots
-Screenshot.png
+screenshot.png
 
 📂 How to Run Locally
 Clone this repository:
