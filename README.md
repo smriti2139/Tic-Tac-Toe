@@ -32,7 +32,7 @@ Clone this repository:
 bash
 Copy
 Edit
-git clone https://github.com/yourusername/tic-tac-toe-ai.git
+git clone https://github.com/smriti2139/tic-tac-toe-ai.git
 cd tic-tac-toe-ai
 Open index.html in your browser.
 
