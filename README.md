@@ -26,39 +26,6 @@ JavaScript – Game logic, AI (Minimax), DOM manipulation, and interactivity
 📷 Screenshots
 ![Tic Tac Toe Screenshot](https://raw.githubusercontent.com/smriti2139/Tic-Tac-Toe/main/Screenshot.png)
 
-📂 How to Run Locally
-Clone this repository:
-
-bash
-Copy
-Edit
-git clone https://github.com/smriti2139/tic-tac-toe-ai.git
-cd tic-tac-toe-ai
-Open index.html in your browser.
-
-No installation required — fully frontend-based project.
-
-📁 Project Structure
-arduino
-Copy
-Edit
-├── index.html
-├── style.css
-├── script.js
-├── mouse-click-153941.mp3
-├── success-1-6297.mp3
-└── interface-124464.mp3
-📌 Learning Highlights
-Implemented the Minimax algorithm for AI decision making
-
-Mastered DOM manipulation and event handling
-
-Designed responsive UI with light/dark mode switch
-
-Integrated audio and animations for better UX
-
-📜 License
-This project is open-source and free to use under the MIT License.
 
 
 
